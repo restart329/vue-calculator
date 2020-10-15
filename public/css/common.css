@@ -1,0 +1,13 @@
+*{ margin : 0; padding : 0;}
+ul,li{ list-style: none;}
+input{outline: none;}
+html,body{ height:100%;}
+#main{ 
+    height: calc(100% - 4px) ; 
+    width: 400px;
+    margin: auto;
+    display: flex; 
+    flex-direction:column;
+    align-items: center;
+    border: 2px gainsboro solid;
+}
