@@ -66,9 +66,9 @@ export default {
         this.lb = "";
         this.dan = "";
       } else {
-        this.t = (this.kg / 1000).toFixed(6);
-        this.lb = (this.kg * 2.21).toFixed(6);
-        this.dan = (this.kg / 50).toFixed(6);
+        this.t = (this.kg / 1000).toFixed(2);
+        this.lb = (this.kg * 2.21).toFixed(2);
+        this.dan = (this.kg / 50).toFixed(2);
       }
     },
     conversion1() {
@@ -77,9 +77,9 @@ export default {
         this.lb = "";
         this.dan = "";
       } else {
-        this.kg = (this.t * 1000).toFixed(6);
-        this.lb = (this.t * 2204.62).toFixed(6);
-        this.dan = (this.t * 20).toFixed(6);
+        this.kg = (this.t * 1000).toFixed(2);
+        this.lb = (this.t * 2204.62).toFixed(2);
+        this.dan = (this.t * 20).toFixed(2);
       }
     },
     conversion2() {
@@ -88,9 +88,9 @@ export default {
         this.t = "";
         this.dan = "";
       } else {
-        this.kg = (this.lb / 2.21).toFixed(6);
-        this.t = (this.lb / 2204.62).toFixed(6);
-        this.dan = (this.lb / 110.23).toFixed(6);
+        this.kg = (this.lb / 2.21).toFixed(2);
+        this.t = (this.lb / 2204.62).toFixed(2);
+        this.dan = (this.lb / 110.23).toFixed(2);
       }
     },
     conversion3() {
@@ -99,9 +99,9 @@ export default {
         this.t = "";
         this.lb = "";
       } else {
-        this.kg = (this.dan * 50).toFixed(6);
-        this.t = (this.dan / 20).toFixed(6);
-        this.lb = (this.dan * 110.23).toFixed(6);
+        this.kg = (this.dan * 50).toFixed(2);
+        this.t = (this.dan / 20).toFixed(2);
+        this.lb = (this.dan * 110.23).toFixed(2);
       }
     }
   }

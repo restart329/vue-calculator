@@ -66,9 +66,9 @@ export default {
         this.dm3 = "";
         this.hl = "";
       } else {
-        this.l = (this.m3 * 1000).toFixed(6);
-        this.dm3 = (this.m3 * 1000).toFixed(6);
-        this.hl = (this.m3 * 10).toFixed(6);
+        this.l = (this.m3 * 1000).toFixed(2);
+        this.dm3 = (this.m3 * 1000).toFixed(2);
+        this.hl = (this.m3 * 10).toFixed(2);
       }
     },
     conversion1() {
@@ -77,9 +77,9 @@ export default {
         this.dm3 = "";
         this.hl = "";
       } else {
-        this.m3 = (this.l / 1000).toFixed(6);
-        this.dm3 = (this.l * 1).toFixed(6);
-        this.hl = (this.l / 100).toFixed(6);
+        this.m3 = (this.l / 1000).toFixed(2);
+        this.dm3 = (this.l * 1).toFixed(2);
+        this.hl = (this.l / 100).toFixed(2);
       }
     },
     conversion2() {
@@ -88,9 +88,9 @@ export default {
         this.l = "";
         this.hl = "";
       } else {
-        this.m3 = (this.dm3 / 1000).toFixed(6);
-        this.l = (this.dm3 * 1).toFixed(6);
-        this.hl = (this.dm3 / 100).toFixed(6);
+        this.m3 = (this.dm3 / 1000).toFixed(2);
+        this.l = (this.dm3 * 1).toFixed(2);
+        this.hl = (this.dm3 / 100).toFixed(2);
       }
     },
     conversion3() {
@@ -99,9 +99,9 @@ export default {
         this.dm3 = "";
         this.l = "";
       } else {
-        this.m3 = (this.hl / 10).toFixed(6);
-        this.dm3 = (this.hl * 100).toFixed(6);
-        this.l = (this.hl * 100).toFixed(6);
+        this.m3 = (this.hl / 10).toFixed(2);
+        this.dm3 = (this.hl * 100).toFixed(2);
+        this.l = (this.hl * 100).toFixed(2);
       }
     }
   }

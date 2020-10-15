@@ -66,9 +66,9 @@ export default {
         this.li = "";
         this.mi = "";
       } else {
-        this.km = (this.m / 1000).toFixed(6);
-        this.li = (this.m / 500).toFixed(6);
-        this.mi = (this.m / 1609.35).toFixed(6);
+        this.km = (this.m / 1000).toFixed(2);
+        this.li = (this.m / 500).toFixed(2);
+        this.mi = (this.m / 1609.35).toFixed(2);
       }
     },
     conversion1() {
@@ -77,9 +77,9 @@ export default {
         this.li = "";
         this.mi = "";
       } else {
-        this.m = (this.km * 1000).toFixed(6);
-        this.li = (this.km * 2).toFixed(6);
-        this.mi = (this.km / 1.61).toFixed(6);
+        this.m = (this.km * 1000).toFixed(2);
+        this.li = (this.km * 2).toFixed(2);
+        this.mi = (this.km / 1.61).toFixed(2);
       }
     },
     conversion2() {
@@ -88,9 +88,9 @@ export default {
         this.km = "";
         this.mi = "";
       } else {
-        this.m = (this.li * 500).toFixed(6);
-        this.km = (this.li / 2).toFixed(6);
-        this.mi = (this.li / 3.22).toFixed(6);
+        this.m = (this.li * 500).toFixed(2);
+        this.km = (this.li / 2).toFixed(2);
+        this.mi = (this.li / 3.22).toFixed(2);
       }
     },
     conversion3() {
@@ -99,9 +99,9 @@ export default {
         this.km = "";
         this.li = "";
       } else {
-        this.li = (this.mi * 3.22).toFixed(6);
-        this.m = (this.mi * 1609.35).toFixed(6);
-        this.km = (this.mi * 1.61).toFixed(6);
+        this.li = (this.mi * 3.22).toFixed(2);
+        this.m = (this.mi * 1609.35).toFixed(2);
+        this.km = (this.mi * 1.61).toFixed(2);
       }
     }
   }

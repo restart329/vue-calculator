@@ -66,9 +66,9 @@ export default {
         this.ha = "";
         this.mu = "";
       } else {
-        this.km2 = (this.m2 / 1000000).toFixed(6);
-        this.ha = (this.m2 / 10000).toFixed(6);
-        this.mu = (this.m2 / 666.67).toFixed(6);
+        this.km2 = (this.m2 / 1000000).toFixed(2);
+        this.ha = (this.m2 / 10000).toFixed(2);
+        this.mu = (this.m2 / 666.67).toFixed(2);
       }
     },
     conversion1() {
@@ -77,9 +77,9 @@ export default {
         this.ha = "";
         this.mu = "";
       } else {
-        this.m2 = (this.km2 * 1000000).toFixed(6);
-        this.ha = (this.km2 * 100).toFixed(6);
-        this.mu = (this.km2 * 1500).toFixed(6);
+        this.m2 = (this.km2 * 1000000).toFixed(2);
+        this.ha = (this.km2 * 100).toFixed(2);
+        this.mu = (this.km2 * 1500).toFixed(2);
       }
     },
     conversion2() {
@@ -88,9 +88,9 @@ export default {
         this.km2 = "";
         this.mu = "";
       } else {
-        this.m2 = (this.ha * 1000).toFixed(6);
-        this.km2 = (this.ha / 100).toFixed(6);
-        this.mu = (this.ha * 15).toFixed(6);
+        this.m2 = (this.ha * 1000).toFixed(2);
+        this.km2 = (this.ha / 100).toFixed(2);
+        this.mu = (this.ha * 15).toFixed(2);
       }
     },
     conversion3() {
@@ -99,9 +99,9 @@ export default {
         this.km2 = "";
         this.ha = "";
       } else {
-        this.ha = (this.mu / 15).toFixed(6);
-        this.m2 = (this.mu * 666.67).toFixed(6);
-        this.km2 = (this.mu / 1500).toFixed(6);
+        this.ha = (this.mu / 15).toFixed(2);
+        this.m2 = (this.mu * 666.67).toFixed(2);
+        this.km2 = (this.mu / 1500).toFixed(2);
       }
     }
   }
